@@ -141,7 +141,7 @@ function App() {
         />
 
         {/* Checkout */}
-        <Route path="/checkout" element={<Checkout cartData={cartData} />} />
+        <Route path="/Checkout" element={<Checkout cartData={cartData} />} />
 
         {/* Order Flow */}
         <Route path="/thank-you" element={<ThankYou />} />
