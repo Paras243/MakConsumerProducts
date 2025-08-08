@@ -15,7 +15,7 @@ import {
 } from "@mui/material";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Pagination } from "swiper/modules";
-import { useNavigate } from "react-router-dom";
+import { useNavigate, Link } from "react-router-dom";
 import "swiper/css";
 import "swiper/css/pagination";
 
@@ -31,6 +31,42 @@ function Checkout({ cartData }) {
   const total = subtotal + shipping;
 
   const handlePlaceOrder = () => navigate("/thank-you");
+
+  // ✅ Show this if cart is empty
+  if (!cartData || cartData.length === 0) {
+    return (
+      <Box
+        textAlign="center"
+        mt={10}
+        sx={{
+          px: { xs: 2, sm: 4 },
+        }}
+      >
+        <Typography variant="h5" gutterBottom>
+          Your cart is empty
+        </Typography>
+        <Typography variant="body1" color="textSecondary" mb={3}>
+          Please add products to your cart before proceeding to checkout.
+        </Typography>
+        <Button
+          component={Link}
+          to="/"
+          variant="contained"
+          sx={{
+            px: 4,
+            py: 1.5,
+            borderRadius: 8,
+            background: "linear-gradient(to right, #43cea2, #185a9d)",
+            "&:hover": {
+              background: "linear-gradient(to right, #36d1dc, #5b86e5)",
+            },
+          }}
+        >
+          Continue Shopping
+        </Button>
+      </Box>
+    );
+  }
 
   return (
     <Box
@@ -138,7 +174,11 @@ function Checkout({ cartData }) {
                   >
                     <CardMedia
                       component="img"
-                      image={item.thumbnail || item.image}
+                      image={
+                        item.thumbnail ||
+                        item.image ||
+                        "https://via.placeholder.com/100"
+                      }
                       alt={item.title}
                       sx={{
                         width: { xs: "100%", sm: 100 },
