@@ -1,0 +1,20 @@
+.hero-image {
+  /*background: url('https://via.placeholder.com/1200x300?text=Explore+QTrip') no-repeat center;*/
+  background-size: cover;
+  height: 300px;
+}
+
+.hero-input {
+  padding: 10px;
+  width: 50%;
+  margin-top: 20px;
+}
+
+body{
+  /*background-color: blanchedalmond;*/
+  /*background-color: #f8f9fa;*/
+  background-color:cornsilk;
+}
+button, .MuiButton-root {
+  background-color: initial;
+}

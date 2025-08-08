@@ -1,0 +1,128 @@
+.footer-container {
+  background-color: #f5f5f5;
+  padding: 40px 20px 20px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.footer-main {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.footer-section {
+  flex: 1 1 200px;
+  min-width: 220px;
+}
+
+.footer-logo-img {
+  width: 120px;
+  height: auto;
+  margin-bottom: 10px;
+}
+
+.footer-input {
+  width: 100%;
+  padding: 8px;
+  margin: 8px 0;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.subscribe-btn {
+  padding: 8px 16px;
+  background-color: #0072e6;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  border-radius: 4px;
+  margin-bottom: 10px;
+}
+
+.subscribe-btn:hover {
+  background-color: #005bb5;
+}
+
+.footer-social-icons img {
+  width: 28px;
+  margin: 0 6px;
+}
+
+.footer-bottom {
+  text-align: center;
+  margin-top: 30px;
+  font-size: 14px;
+  color: #555;
+}
+
+/* Popup styles */
+.popup-message {
+  margin-top: 10px;
+  background-color: #dff0d8;
+  color: #3c763d;
+  padding: 10px 15px;
+  border-radius: 4px;
+  font-weight: 500;
+  box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.below-contact {
+  margin-top: 20px;
+}
+
+/* Ensure spacing between contact and stay in touch */
+.contact-section {
+  margin-right: 30px;
+}
+
+.footer-section ul {
+  list-style-type: none; /* Removes bullet points */
+  padding: 0; /* Optional: Removes default padding */
+  margin: 0; /* Optional: Removes default margin */
+}
+
+.footer-section ul li {
+  margin-bottom: 8px; /* Optional: Adds spacing between list items */
+}
+
+.footer-container {
+  background-color: #001f3f; /* Dark Blue */
+  color: white;
+  padding: 40px 20px;
+}
+
+.footer-container h3,
+.footer-container p,
+.footer-container li,
+.footer-bottom p {
+  color: white;
+}
+
+/* Optional: style input and button */
+.footer-input {
+  background-color: white;
+  color: #001f3f;
+  border: none;
+  padding: 8px;
+  margin-top: 10px;
+  width: 100%;
+  border-radius: 4px;
+}
+
+.subscribe-btn {
+  background-color: #0074D9; /* Lighter blue for contrast */
+  color: white;
+  border: none;
+  padding: 8px 12px;
+  margin-top: 10px;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+.footer-bottom {
+  text-align: center;
+  margin-top: 30px;
+  border-top: 1px solid #ccc;
+  padding-top: 20px;
+}
